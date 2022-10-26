@@ -14,4 +14,10 @@ class SessionsView
   def wrong_credentials
     puts "Wrong Credentials, try again!"
   end
+
+  def display_riders(list)
+    list.each do |customer|
+      puts "#{customer.id} - #{customer.username} | Role: #{customer.role}"
+    end
+  end
 end
